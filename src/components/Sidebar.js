@@ -17,6 +17,11 @@ const Sidebar = () => {
             enable={{
               bottom: true,
             }}
+            handleStyles={{
+              bottom: {
+                bottom: "0px",
+              },
+            }}
             style={{ overflowX: "hidden", overflowY: "auto" }}
           >
             <Category />
@@ -32,6 +37,11 @@ const Sidebar = () => {
               bottom: true,
             }}
             style={{ overflowX: "hidden", overflowY: "auto" }}
+            handleStyles={{
+              bottom: {
+                bottom: "0px",
+              },
+            }}
           >
             <Category />
           </Resizable>{" "}
