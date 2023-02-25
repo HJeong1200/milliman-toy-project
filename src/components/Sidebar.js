@@ -23,7 +23,18 @@ const Sidebar = () => {
           </Resizable>
         </Panel>
         <Panel header="Category 2" key="category_2">
-          <Category />
+          <Resizable
+            defaultSize={{
+              width: "100%",
+              height: "277",
+            }}
+            enable={{
+              bottom: true,
+            }}
+            style={{ overflowX: "hidden", overflowY: "auto" }}
+          >
+            <Category />
+          </Resizable>{" "}
         </Panel>
       </Collapse>
     </aside>
