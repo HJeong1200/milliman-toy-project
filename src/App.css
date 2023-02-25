@@ -18,3 +18,11 @@ aside {
   width: 230px;
   height: 600px;
 }
+
+.ant-collapse-header {
+  display: flex !important;
+  align-items: center !important;
+  width: 230px;
+  height: 23px;
+  padding: 0px !important;
+}
