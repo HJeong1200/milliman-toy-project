@@ -4,3 +4,17 @@ header {
   text-align: center;
   background-color: lightgray;
 }
+
+.contents {
+  display: flex;
+}
+
+main {
+  width: 730px;
+  height: 600px;
+}
+
+aside {
+  width: 230px;
+  height: 600px;
+}
