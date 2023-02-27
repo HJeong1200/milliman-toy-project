@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "react-start": "BROWSER=none npm start",
-    "electron-start": "ELECTRON_START_URL=http://localhost:3000 electron ."
+    "electron-start": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "windows-start": "electron ."
   },
   "eslintConfig": {
     "extends": [
