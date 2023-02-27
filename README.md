@@ -1,6 +1,31 @@
 # Milliman Toy Project
 
+## 목차
+
+[1. 패키지 실행 방법](1.-패키지-실행-방법)
+
+[2. 추가 설치 패키지](2.-추가-설치-패키지)
+
+[3. 전체 이미지](3.-전체-이미지)
+
 ## 1. 패키지 실행 방법
+### 1-1. Windows
+- 패키지 설치
+```bash
+npm install
+```
+
+- 프로그램 실행
+```bash
+npm run start
+```
+
+- electron 실행
+```bash
+npm run windows-start
+```
+
+### 1-2. Mac OS
 - 패키지 설치
 ```bash
 npm install
