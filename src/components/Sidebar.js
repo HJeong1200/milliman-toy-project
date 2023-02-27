@@ -1,6 +1,6 @@
 import { Collapse } from "antd";
-import { Resizable } from "re-resizable";
 import Category from "./sidebar/Category";
+import Resizer from "./sidebar/Resizer";
 
 const Sidebar = () => {
   const { Panel } = Collapse;
@@ -9,42 +9,10 @@ const Sidebar = () => {
     <aside>
       <Collapse>
         <Panel header="Category 1" key="category_1">
-          <Resizable
-            defaultSize={{
-              width: "100%",
-              height: "277",
-            }}
-            enable={{
-              bottom: true,
-            }}
-            handleStyles={{
-              bottom: {
-                bottom: "0px",
-              },
-            }}
-            style={{ overflowX: "hidden", overflowY: "auto" }}
-          >
-            <Category />
-          </Resizable>
+          <Resizer children={<Category />} />
         </Panel>
         <Panel header="Category 2" key="category_2">
-          <Resizable
-            defaultSize={{
-              width: "100%",
-              height: "277",
-            }}
-            enable={{
-              bottom: true,
-            }}
-            style={{ overflowX: "hidden", overflowY: "auto" }}
-            handleStyles={{
-              bottom: {
-                bottom: "0px",
-              },
-            }}
-          >
-            <Category />
-          </Resizable>{" "}
+          <Resizer children={<Category />} />
         </Panel>
       </Collapse>
     </aside>
