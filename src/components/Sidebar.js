@@ -1,19 +1,22 @@
 import { Collapse } from "antd";
+import range from "../functions/range";
 import Category from "./sidebar/Category";
 import Resizer from "./sidebar/Resizer";
 
 const Sidebar = () => {
   const { Panel } = Collapse;
+  const categories = range(1, 2);
 
   return (
     <aside>
       <Collapse>
-        <Panel header="Category 1" key="category_1">
-          <Resizer children={<Category />} />
-        </Panel>
-        <Panel header="Category 2" key="category_2">
-          <Resizer children={<Category />} />
-        </Panel>
+        {categories.map((index) => {
+          return (
+            <Panel header={`Category ${index}`} key={index}>
+              <Resizer children={<Category />} />
+            </Panel>
+          );
+        })}
       </Collapse>
     </aside>
   );
