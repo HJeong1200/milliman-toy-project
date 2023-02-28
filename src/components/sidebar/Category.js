@@ -16,12 +16,12 @@ const Category = () => {
         nodeId="Folder 2"
         label={<Label icon={<FolderFilled />} name="Folder 2" />}
       >
-        {files.map((num) => (
+        {files.map((index) => (
           <TreeItem
-            key={num}
-            nodeId={`File ${num}`}
-            label={<Label icon={<FileFilled />} name={`File ${num}`} />}
-          ></TreeItem>
+            key={index}
+            nodeId={`File ${index}`}
+            label={<Label icon={<FileFilled />} name={`File ${index}`} />}
+          />
         ))}
       </TreeItem>
     </TreeView>
